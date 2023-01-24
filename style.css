@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Wild';
+    src: url(fonts/IntotheWildFont-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Silk';
+    src: url(fonts/SilkRemington-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Arson';
+    src: url(fonts/Arson-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Burtons';
+    src: url(fonts/Burtons.otf);
+}
+
+@font-face {
+    font-family: 'Burtons Script';
+    src: url(fonts/Burtons\ Script.otf);
+}
+
+:root {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: Burtons;
+    letter-spacing: 2px;
+
+    color: white;
+
+    --purple: #7449ffd0;
+    --blue: #495cb9;
+    --black: rgb(0, 0, 0);
+}
+
+.ital {
+    font-style: italic;
+    color: var(--purple);
+}
+
+.righthalf {
+    flex: 2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between
+}
+
+.righthalf > * {
+    height: 100%;
+    /* padding: 0 0 0 10%; */
+}
+
+.lefthalf {
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    display: flex;
+}
+
+.transparent--border h1 {
+    color: white;
+    margin: auto;
+    font-family: 'Norse';
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.lefthalf > .transparent--border {
+    background-color: rgba(0, 0, 0, 0.308);
+    position:relative;
+    width: 33.4vw;
+    height: 100px;
+    top: 25vh;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img[src="odin-lined.png"] {
+    height: 60px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.card {
+    /* border: 2px solid black; */
+    background-color: var(--black);
+    padding: 2rem 10rem; 
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    flex-basis: 100%;
+    
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    row-gap: 1rem;
+    column-gap: 5rem;
+    /* width: 100%; */
+}
+
+#grid-item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input, label {
+    display: block;
+    font-size: 20px;
+}
+
+input {
+    background-color: var(--black);
+    border: none;
+    color: white;
+    min-height: 35px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus:required:invalid {
+    background-color: #4f01012f;
+    outline: 1px solid var(--purple);
+}
+
+#grid-item6 button {
+    /* margin: 2rem 0 0 0;. */
+    padding: 15px 30px;
+    border-radius: 6px;
+    background-color: var(--purple);
+    display: block;
+    margin: 0 0 20px 0;
+    font-family: Burtons;
+    letter-spacing:1px;
+    color: rgba(255, 255, 255, 0.895);
+}
+
+.card.middlecard {
+    background-color: rgba(14, 14, 14, 0.968);
+    
+}
+
+.card.middlecard h1 {
+    letter-spacing: 1px;
+}
+
+.card.uppercard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* font-family: 'Burtons Script'; */
+    /* font-size: 40px; */
+    /* text-align: ; */
+    /* justify-content: */
+    /* align-items: center; */
+}
+
+.card h1 {
+    margin: 0 0 1rem 0;
+}
+
+a {
+    color: var(--purple);
+}
+
+#create-account:hover {
+    background-color: #7348ff;
+}
+
+a:hover {
+    color: #7348ff;
+}
