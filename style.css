@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 @font-face {
     font-family: 'Norse';
     src: url(fonts/Norse-Bold.otf);
@@ -66,7 +68,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -470px;
-    width: 30%;
+    width: 40%;
     display: flex;
 }
 
@@ -83,7 +85,7 @@
 .lefthalf > .transparent--border {
     background-color: rgba(0, 0, 0, 0.308);
     position:relative;
-    width: 33.4vw;
+    width: 100%;
     height: 100px;
     top: 25vh;
     color: var(--primary);
@@ -115,7 +117,7 @@ body {
 
 form {
     display: grid;
-    grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 40%);
     row-gap: 1rem;
     column-gap: 5rem;
     /* width: 100%; */
